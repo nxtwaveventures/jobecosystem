@@ -1,3 +1,26 @@
+# Quick GitHub Actions Setup
+
+## Method 1: Automatic Setup (Recommended)
+Your repository already has the workflow file. Just:
+
+1. **Push commits to GitHub**:
+   ```bash
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages**:
+   - Go to: https://github.com/nxtwaveventures/hirefast/settings/pages
+   - Set **Source** to: **GitHub Actions**
+   - Save
+
+## Method 2: Manual Workflow Creation
+If you need to create the workflow manually at https://github.com/nxtwaveventures/hirefast/actions/new:
+
+**Workflow Name:** `Deploy to GitHub Pages`
+
+**Copy this YAML:**
+
+```yaml
 name: Deploy to GitHub Pages
 
 on:
@@ -31,25 +54,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-      - name: Prepare for static export
-        run: |
-          # Temporarily rename API routes for static export
-          if [ -d "src/app/api" ]; then
-            mv src/app/api src/app/api-disabled
-          fi
-          
       - name: Build Next.js app
         run: npm run build
         env:
           NODE_ENV: production
           GITHUB_PAGES: true
-          
-      - name: Restore API routes
-        run: |
-          # Restore API routes after build
-          if [ -d "src/app/api-disabled" ]; then
-            mv src/app/api-disabled src/app/api
-          fi
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -69,3 +78,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+```
+
+## Your Live Site:
+🌐 **https://nxtwaveventures.github.io/hirefast**
+
+## Status:
+✅ Build configuration fixed  
+✅ Static export working  
+✅ API routes disabled for GitHub Pages  
+✅ Development mode still has full functionality  
+✅ Ready for deployment!
