@@ -46,7 +46,7 @@ function JobDetailsContent({ params }: JobDetailsPageProps) {
 
         // If not found in sheets, create demo job data
         if (!foundJob) {
-          const demoJobs = {
+          const demoJobs: Record<string, Job> = {
             'demo-1': {
               id: 'demo-1',
               clientId: 'client-1',
@@ -58,30 +58,37 @@ This project involves creating a sophisticated chatbot that can handle complex c
 
 ## Key Requirements
 - Integration with OpenAI GPT-4 API
-- Natural language processing capabilities
-- Multi-language support (English, Spanish, French)
-- Integration with existing customer database
-- Analytics and reporting dashboard
-- Mobile-responsive web interface
+- Natural Language Processing expertise
+- Experience with customer service automation
+- Knowledge of machine learning algorithms
+- Proficiency in Python and JavaScript
 
-## Technical Specifications
-- Python backend with FastAPI
-- React frontend for admin dashboard
-- PostgreSQL database
-- Docker containerization
-- AWS deployment
+## Technical Stack
+- Python for backend development
+- OpenAI GPT-4 API integration
+- React.js for admin dashboard
+- Node.js and Express for API
+- MongoDB for conversation storage
+- Docker for containerization
 
-## Deliverables
-1. Complete chatbot system
-2. Admin dashboard for monitoring
-3. API documentation
-4. Deployment scripts
-5. Training documentation
-6. 3 months of support
+## Project Scope
+- Design and implement chatbot logic
+- Create training datasets
+- Develop admin dashboard
+- API integration and testing
+- Documentation and deployment
 
-## Timeline
-Expected completion in 6-8 weeks from project start.`,
-              skills: ['Python', 'OpenAI', 'Machine Learning', 'NLP', 'React', 'FastAPI'],
+## Budget and Timeline
+Budget: $3,500
+Timeline: 6-8 weeks
+
+## How to Apply
+Please include:
+1. Portfolio of similar AI projects
+2. Proposed technical approach
+3. Timeline breakdown
+4. References from previous clients`,
+              skills: ['Python', 'OpenAI', 'Machine Learning', 'NLP', 'React', 'Node.js'],
               budget: 3500,
               status: 'open',
               createdAt: new Date().toISOString()
@@ -89,24 +96,24 @@ Expected completion in 6-8 weeks from project start.`,
             'demo-2': {
               id: 'demo-2',
               clientId: 'client-2',
-              title: 'React Native Mobile App',
-              description: `Develop a cross-platform mobile application with real-time features and cloud integration.
+              title: 'Mobile App with AI Features',
+              description: `## Project Description
 
-## Project Overview
-We need a mobile app that provides real-time collaboration features for remote teams.
+We need an experienced React Native developer to create a cutting-edge mobile application with integrated AI capabilities.
 
-## Features Required
-- Real-time chat and video calls
-- File sharing and document collaboration
-- Task management and project tracking
-- Push notifications
+## Core Features
+- Image recognition and classification
+- Voice-to-text functionality
+- AI-powered recommendations
+- Real-time chat interface
 - Offline mode support
-- User authentication and profiles
+- User authentication
 
 ## Technical Requirements
 - React Native for cross-platform development
+- TensorFlow Lite for on-device AI
 - Firebase for backend services
-- WebRTC for video calls
+- WebRTC for real-time features
 - Redux for state management
 - TypeScript for type safety
 
