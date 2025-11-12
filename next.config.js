@@ -1,21 +1,15 @@
 /** @type {import('next').NextConfig} */
-const isGitHubPages = process.env.GITHUB_PAGES === 'true'
-
 const nextConfig = {
-  // Only enable static export for GitHub Pages
-  ...(isGitHubPages && {
-    output: 'export',
-    trailingSlash: true,
-    skipTrailingSlashRedirect: true,
-    distDir: 'dist'
-  }),
-  images: {
-    unoptimized: isGitHubPages
-  },
-  basePath: isGitHubPages ? '/hirefast' : '',
-  assetPrefix: isGitHubPages ? '/hirefast' : '',
+  // Optimized for Vercel deployment with full Next.js features
   experimental: {
     missingSuspenseWithCSRBailout: false,
+  },
+  images: {
+    domains: ['images.unsplash.com', 'via.placeholder.com'],
+  },
+  // Environment variables for different deployment environments
+  env: {
+    CUSTOM_KEY: process.env.CUSTOM_KEY,
   }
 }
 
