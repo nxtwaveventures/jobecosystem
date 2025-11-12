@@ -266,9 +266,9 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-white transition-colors">Terms of Service</a></li>
-                <li><a href="/data" className="hover:text-white transition-colors">Data Protection</a></li>
+                <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
+                <li><Link href="/data" className="hover:text-white transition-colors">Data Protection</Link></li>
               </ul>
             </div>
           </div>
@@ -285,9 +285,9 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 max-w-6xl mx-auto">
               <p className="text-sm text-gray-600">
                 We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
-                <a href="/privacy" className="text-blue-600 hover:text-blue-700 ml-1 underline">
+                <Link href="/privacy" className="text-blue-600 hover:text-blue-700 ml-1 underline">
                   Learn more
-                </a>
+                </Link>
               </p>
               <div className="flex gap-4">
                 <button
