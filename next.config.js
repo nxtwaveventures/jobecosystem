@@ -1,14 +1,22 @@
 /** @type {import('next').NextConfig} */
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
-  skipTrailingSlashRedirect: true,
-  distDir: 'dist',
+  // Only enable static export for GitHub Pages
+  ...(isGitHubPages && {
+    output: 'export',
+    trailingSlash: true,
+    skipTrailingSlashRedirect: true,
+    distDir: 'dist'
+  }),
   images: {
-    unoptimized: true
+    unoptimized: isGitHubPages
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/hirefast' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/hirefast' : '',
+  basePath: isGitHubPages ? '/hirefast' : '',
+  assetPrefix: isGitHubPages ? '/hirefast' : '',
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  }
 }
 
 module.exports = nextConfig
