@@ -59,11 +59,12 @@ export const metadata: Metadata = {
     title: 'AI/ML Freelance Platform',
     description: 'Connect AI/ML freelancers with clients through our comprehensive platform.',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 /**

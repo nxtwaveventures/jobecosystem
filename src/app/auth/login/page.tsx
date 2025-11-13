@@ -7,8 +7,8 @@
 
 'use client'
 
-import { useState } from 'react'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { signInWithEmail, signUpWithEmail } from '@/lib/sheetsAuth'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { 
@@ -42,9 +42,19 @@ function LoginPageContent() {
   const [error, setError] = useState('')
   const [message, setMessage] = useState('')
   const [formErrors, setFormErrors] = useState<FormErrors>({})
+  const [role, setRole] = useState<'freelancer' | 'client'>('freelancer')
   const router = useRouter()
-  const searchParams = useSearchParams()
-  const role = (searchParams.get('role') as 'freelancer' | 'client') || 'freelancer'
+
+  // Get role from URL parameters on client side
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search)
+      const roleParam = urlParams.get('role') as 'freelancer' | 'client'
+      if (roleParam) {
+        setRole(roleParam)
+      }
+    }
+  }, [])
 
   /**
    * Validate form data

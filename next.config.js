@@ -17,6 +17,10 @@ const nextConfig = {
   telemetry: {
     disabled: true,
   },
+  // Handle dynamic routes properly for Vercel
+  generateBuildId: async () => {
+    return 'vercel-build'
+  },
 }
 
 module.exports = nextConfig
