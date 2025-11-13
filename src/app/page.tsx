@@ -191,7 +191,7 @@ export default function Home() {
                   </div>
                 </div>
                 <blockquote className="text-gray-600 leading-relaxed mb-6 flex-grow">
-                  "Found an exceptional ML engineer within days. The pre-vetting process saved us weeks of interviews."
+                  &ldquo;Found an exceptional ML engineer within days. The pre-vetting process saved us weeks of interviews.&rdquo;
                 </blockquote>
                 <div className="flex items-center text-[#4361ee]">
                   <span className="font-semibold">Hired: </span>
@@ -212,7 +212,7 @@ export default function Home() {
                   </div>
                 </div>
                 <blockquote className="text-gray-600 leading-relaxed mb-6 flex-grow">
-                  "The fixed-rate model and streamlined process made hiring top AI talent surprisingly efficient."
+                  &ldquo;The fixed-rate model and streamlined process made hiring top AI talent surprisingly efficient.&rdquo;
                 </blockquote>
                 <div className="flex items-center text-[#4361ee]">
                   <span className="font-semibold">Hired: </span>
@@ -233,7 +233,7 @@ export default function Home() {
                   </div>
                 </div>
                 <blockquote className="text-gray-600 leading-relaxed mb-6 flex-grow">
-                  "Their focus on AI specialists means every candidate was relevant. Telegram integration made communication seamless."
+                  &ldquo;Their focus on AI specialists means every candidate was relevant. Telegram integration made communication seamless.&rdquo;
                 </blockquote>
                 <div className="flex items-center text-[#4361ee]">
                   <span className="font-semibold">Hired: </span>

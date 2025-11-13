@@ -29,9 +29,12 @@ export function AIRecommendations({ jobId, onContactFreelancer }: AIRecommendati
   const [lastUpdated, setLastUpdated] = useState<string | null>(null)
 
   useEffect(() => {
-    if (jobId) {
-      fetchAIRecommendations()
+    const fetchRecommendations = async () => {
+      if (jobId) {
+        await fetchAIRecommendations()
+      }
     }
+    fetchRecommendations()
   }, [jobId])
 
   /**
@@ -131,7 +134,7 @@ export function AIRecommendations({ jobId, onContactFreelancer }: AIRecommendati
           <div className="text-4xl mb-4">🔍</div>
           <h4 className="text-lg font-medium text-gray-900 mb-2">No Matches Found</h4>
           <p className="text-gray-600 mb-4">
-            Our AI couldn't find suitable matches for this job yet.
+            Our AI couldn&rsquo;t find suitable matches for this job yet.
           </p>
           <Button
             onClick={() => fetchAIRecommendations(true)}

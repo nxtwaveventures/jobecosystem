@@ -208,7 +208,7 @@ We need an experienced React Native developer to create a cutting-edge mobile ap
             </svg>
           </div>
           <h3 className="text-lg font-medium text-gray-900 mb-2">Job Not Found</h3>
-          <p className="text-gray-600 mb-4">The job you're looking for doesn't exist or has been removed.</p>
+          <p className="text-gray-600 mb-4">The job you&rsquo;re looking for doesn&rsquo;t exist or has been removed.</p>
           <Link href="/jobs">
             <Button>Browse Other Jobs</Button>
           </Link>

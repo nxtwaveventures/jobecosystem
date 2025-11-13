@@ -37,7 +37,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-700 leading-relaxed">
-              By accessing or using AI Talent Solutions ("the Platform"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not use the Platform. We reserve the right to modify these Terms at any time, and continued use constitutes acceptance of updated Terms.
+              By accessing or using AI Talent Solutions (&ldquo;the Platform&rdquo;), you agree to be bound by these Terms of Service (&ldquo;Terms&rdquo;). If you do not agree to these Terms, you may not use the Platform. We reserve the right to modify these Terms at any time, and continued use constitutes acceptance of updated Terms.
             </p>
           </section>
 
@@ -89,7 +89,7 @@ export default function TermsOfService() {
               <li>Reverse engineer or attempt to access source code</li>
               <li>Circumvent security features or access controls</li>
               <li>Use the Platform for any illegal purposes</li>
-              <li>Interfere with Platform operations or other users' access</li>
+              <li>Interfere with Platform operations or other users&rsquo; access</li>
             </ul>
           </section>
 
@@ -172,7 +172,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Disclaimers</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-              <li>The Platform is provided "as is" without warranties of any kind</li>
+              <li>The Platform is provided &ldquo;as is&rdquo; without warranties of any kind</li>
               <li>We do not guarantee job placement or hiring outcomes</li>
               <li>We do not verify all user-submitted information</li>
               <li>We are not responsible for the conduct of users or employment decisions</li>

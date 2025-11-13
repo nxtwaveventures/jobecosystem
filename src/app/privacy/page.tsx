@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed">
-              AI Talent Solutions ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform to connect AI/ML specialists with companies.
+              AI Talent Solutions (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform to connect AI/ML specialists with companies.
             </p>
           </section>
 
@@ -150,7 +150,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Children's Privacy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Children&rsquo;s Privacy</h2>
             <p className="text-gray-700 leading-relaxed">
               Our platform is not intended for individuals under 18 years of age. We do not knowingly collect personal information from children. If we learn we have collected information from a child, we will delete it promptly.
             </p>
@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Changes to This Policy</h2>
             <p className="text-gray-700 leading-relaxed">
-              We may update this Privacy Policy periodically. We will notify you of material changes by posting the updated policy on our platform and updating the "Last Updated" date. Your continued use of the platform constitutes acceptance of the updated policy.
+              We may update this Privacy Policy periodically. We will notify you of material changes by posting the updated policy on our platform and updating the &ldquo;Last Updated&rdquo; date. Your continued use of the platform constitutes acceptance of the updated policy.
             </p>
           </section>
 

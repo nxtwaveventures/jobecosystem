@@ -6,10 +6,16 @@
  */
 
 export interface FreelancerMatch {
-  id: string
-  name: string
-  skills: string[]
-  experience: string
+  freelancer_id: string
+  freelancer: {
+    name: string
+    email: string
+    experience_level: string
+  }
+  match_score: number
+  confidence: number
+  matching_skills: string[]
+  missing_skills: string[]
   score: number
   hourlyRate?: number
   availability?: string
@@ -146,20 +152,32 @@ class AIMatchingEngine {
     // Mock matching results
     return [
       {
-        id: 'freelancer-1',
-        name: 'Sarah Chen',
-        skills: ['Python', 'Machine Learning', 'TensorFlow', 'React'],
-        experience: '5 years in AI/ML development',
+        freelancer_id: 'freelancer-1',
+        freelancer: {
+          name: 'Sarah Chen',
+          email: 'sarah.chen@email.com',
+          experience_level: 'Senior'
+        },
+        match_score: 95,
+        confidence: 92,
+        matching_skills: ['Python', 'Machine Learning', 'TensorFlow', 'React'],
+        missing_skills: ['AWS', 'Docker'],
         score: 95,
         hourlyRate: 75,
         availability: 'Available now',
         portfolio: ['AI Chatbot Project', 'Computer Vision App']
       },
       {
-        id: 'freelancer-2', 
-        name: 'Michael Rodriguez',
-        skills: ['JavaScript', 'React', 'Node.js', 'AWS'],
-        experience: '4 years in full-stack development',
+        freelancer_id: 'freelancer-2',
+        freelancer: {
+          name: 'Michael Rodriguez',
+          email: 'michael.rodriguez@email.com', 
+          experience_level: 'Mid'
+        },
+        match_score: 88,
+        confidence: 85,
+        matching_skills: ['JavaScript', 'React', 'Node.js', 'AWS'],
+        missing_skills: ['Machine Learning', 'Python'],
         score: 88,
         hourlyRate: 65,
         availability: 'Available in 1 week',
